@@ -1,0 +1,29 @@
+body{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: teal;
+    padding: .3em .3em;
+}
+img{
+    width: 1.5em;
+}
+
+.nav-link{
+    all:unset;
+}
+main{
+    background-color: tomato;
+    height: 100vh;
+}
+footer{
+    background-color: blueviolet;
+    height: 6em;
+}
