@@ -1,54 +1,36 @@
 body{
     all: unset;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 53, 59, 23);
-    background: url(../img/nine.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover; 
-}
-/* #logo{
-    width: 3em;
-    margin: 0 1em;
-}
-#logo:hover{
-    cursor: pointer;
-}
-#container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.texto{
-    font-size: 1em;
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.texto:hover{
-    color:aquamarine;
-    cursor: pointer;
-} */
 
+}
 
 nav{
     all: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     z-index: 2;
+    background-color: rgba(0, 53, 59, 23);
 
+}
+#cajon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#home{
+    font-size: 18em;
 }
 .links{
     text-decoration: none;
-    color: white;
     font-size: 2em;
-    font-family: monospace;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(0, 168, 186, 73);
 }
 .links:hover{
