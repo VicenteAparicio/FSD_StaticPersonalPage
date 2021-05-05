@@ -1,57 +1,17 @@
 body{
     all: unset;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    /* background: url(../img/nine.jpg) no-repeat center center fixed;
+    background-color: rgba(0, 53, 59, 23);
+    background: url(../img/nine.jpg) no-repeat center center fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    -o-background-size: cover; */
+    -o-background-size: cover; 
 }
-
-/*LOGO + NAVEGADOR + NOMBRE*/
-/* header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 10em;
-    z-index: 3;
-
-}
-
-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 5em;
-    width: 6em;
-
-}
-.nav-link{
-    font-size: 1em;
-    font-family:monospace ;
-    text-decoration: none;
-    color: white;
-}
-.nav-link:hover{
-    font-size: 1.5em;
-}
-
-main{
-    width: 100vw;
-    height: 100vh;
-    background-color: chocolate;
-    z-index: 3;
-}
-
-*/
-#logo{
+/* #logo{
     width: 3em;
     margin: 0 1em;
 }
@@ -73,6 +33,31 @@ main{
 .texto:hover{
     color:aquamarine;
     cursor: pointer;
+} */
+
+
+nav{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+
+}
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-family: monospace;
+    color: rgba(0, 168, 186, 73);
+}
+.links:hover{
+    color: rgba(0, 226, 250, 98);
 }
 
+main{
+    all: unset;
+    width: 100vw;
+    z-index: 1;
 
+}
