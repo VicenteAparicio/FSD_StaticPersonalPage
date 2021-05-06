@@ -28,6 +28,7 @@ nav{
 }
 
 #home{
+    margin-top: 1em;
     font-size: 15vw;
     line-height: .5em;
     margin-left: -92%;
@@ -69,7 +70,7 @@ nav{
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1, 0.4, 0.2, 1);
+    animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
 }
 
 @keyframes arrowDownAnimation {
@@ -116,13 +117,10 @@ p{
 #containerAboutMe{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 #containerText{
     width: 80%;
-}
-#aboutText{
     font-size: 13vw;
     font-weight: 200;
 }
@@ -138,21 +136,29 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 1;
+    justify-content: center;
     width: 80%;
 }
 .boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
-    padding: 1em 1em 1.5em 1em;
-    width: 30em;
+    width: 20em;
     min-height: 10em;
     margin-bottom: 5em;
-    border-radius: 1.2em .3em / 1.2em .3em;
-    border: .1em solid blanchedalmond;
-    
+    font-size: 1em;
+    font-weight: 200;  
 }
-
+.tituloBoxes{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+#center{
+    width: 20em;
+    margin: 0 3em 5em;
+}
 @media (max-width: 40em){
     nav{
         margin-top: 6em;
@@ -171,5 +177,20 @@ p{
     #arrowDown{
         color:blanchedalmond;
         font-size: 1em;
+    }
+    .containerTitle{
+        align-self: center;
+        margin-bottom: 4em;
+    }
+    .sectionTitle{
+        margin: 0;
+        font-size: 2em;
+    }
+    #center{
+        width: 20em;
+        margin: 0 0 5em;
+    }
+    .secciones{
+        padding: 3em 0;
     }
 }
