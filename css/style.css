@@ -5,9 +5,10 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
     background-color: rgba(0, 53, 59, 23);
 }
+
+/* HOME */
 nav{
     all: unset;
     display: flex;
@@ -15,7 +16,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin: 10em 0 15em 0;
-    height: 20em;
+    height: 60em;
     width: 50%;
 }
 #containerHome{
@@ -23,7 +24,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 60%;
 }
 #home{
     font-size: 18em;
@@ -33,54 +34,86 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 50%;
+    width: 60%;
 }
 .links{
     text-decoration: none;
     font-size: 2em;
     font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
     color: rgba(0, 168, 186, 73);
 }
 .links:hover{
     color: rgba(0, 226, 250, 98);
 }
-
-main{
+/* REGLA DE LAS SECCIONES */
+.secciones{
     all: unset;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0;
+    width: 100%;
+}
+h2{
+    all: unset;
+}
+p{
+    all: unset;
+}
+.containerTitle{
+    align-self: center;
+    margin-bottom: 5em;
+}
+.sectionTitle{
+    font-size: 4em;
+    font-weight: 200;
+}
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
+/* COLORES */
+.lighter{
+    color: blanchedalmond;
+    background-color: rgba(0, 53, 59, 23);
+
+}
+.darker{
+    color: rgba(0, 53, 59, 23);
+    background-color: blanchedalmond;
+}
+
+/* ABOUT ME */
+#containerText{
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+.aboutText{
+    font-size: 15em;
+    font-weight: 200;
+}
+
+/* STUFF*/
+#containerKnowledge{
+    all: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 40em;
-    background-color: blanchedalmond;
 }
-#containerTitle{
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20em;
-}
-
-#aboutMe{
-    all: unset;
-    font-size: 4em;
-    font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(0, 53, 59, 23);
-}
-
 #containerBoxes{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 20em;
+    flex-grow: 1;
     width: 80%;
 }
 .aboutBoxes{
-    background-color: red;
     width: 20em;
-
+    height: 20em;
+    margin-bottom: 3em;
 }
+
