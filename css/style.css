@@ -15,8 +15,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10em 0 15em 0;
-    height: 40em;
+    height: 100vh;
     width: 50%;
 }
 #containerHome{
@@ -53,6 +52,29 @@ nav{
 }
 .links:hover{
     color: white;
+}
+/* REDES SOCIALES */
+
+#redes{
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    height: 10em;
+    width: 80%;
+}
+#arrowDown{
+    color:blanchedalmond;
+    font-size: 1.5em;
+    animation-name: arrowDownAnimation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0.4, 0.2, 1);
+}
+
+@keyframes arrowDownAnimation {
+    from {margin-top: 0em;}
+    to{margin-top: 10em;}
 }
 /* REGLA DE LAS SECCIONES */
 .secciones{
@@ -121,12 +143,21 @@ p{
     width: 80%;
 }
 .boxes{
+    box-sizing: border-box;
+    padding: 1em 1em 1.5em 1em;
     width: 30em;
-    height: 30em;
+    min-height: 10em;
     margin-bottom: 5em;
+    border-radius: 1.2em .3em / 1.2em .3em;
+    border: .1em solid blanchedalmond;
+    
 }
 
 @media (max-width: 40em){
+    nav{
+        margin-top: 6em;
+        height: 100vh;
+    }
     #cajon{
         margin: 0;
         width: 100%;
@@ -136,5 +167,9 @@ p{
     }
     .links{
         font-size: 1.5em;
+    }
+    #arrowDown{
+        color:blanchedalmond;
+        font-size: 1em;
     }
 }
