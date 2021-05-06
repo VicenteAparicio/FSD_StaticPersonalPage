@@ -54,9 +54,8 @@ nav{
 .links:hover{
     color: white;
 }
-/* REDES SOCIALES */
-
-#redes{
+/* ICONOS Y FLECHAS */
+.flechas{
     margin-top: 5em;
     display: flex;
     justify-content: center;
@@ -65,17 +64,31 @@ nav{
 }
 #arrowDown{
     color:blanchedalmond;
-    font-size: 1.5em;
     animation-name: arrowDownAnimation;
+}
+#levelDown{
+    color:rgba(0, 53, 59, 23);
+    animation-name: arrowDownAnimation;
+}
+#arrowKnowledge{
+    color:blanchedalmond;
+    animation-name: arrowRotateAnimation;
+}
+.icos{
+    font-size: 1.5em;
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
 }
-
 @keyframes arrowDownAnimation {
     from {margin-top: 0em;}
     to{margin-top: 10em;}
+}
+
+@keyframes arrowRotateAnimation {
+    from {transform: rotate(0deg);}
+    to{transform: rotate(90deg);}
 }
 /* REGLA DE LAS SECCIONES */
 .secciones{
