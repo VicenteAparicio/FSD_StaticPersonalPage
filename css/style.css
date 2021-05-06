@@ -16,41 +16,50 @@ nav{
     align-items: center;
     justify-content: center;
     margin: 10em 0 15em 0;
-    height: 60em;
+    height: 40em;
     width: 50%;
 }
 #containerHome{
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60%;
 }
+
 #home{
-    font-size: 18em;
+    font-size: 15vw;
+    line-height: .5em;
+    margin-left: -92%;
+}
+#home2{
+    font-size: 15vw;
+    line-height: .5em;
+    margin-left: 100%;
 }
 #cajon{
-    box-sizing: border-box;
+    margin-top: 2.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 60%;
+    width: 90%;
 }
 .links{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 100;
-    color: rgba(0, 168, 186, 73);
+    color: blanchedalmond;
 }
 .links:hover{
-    color: rgba(0, 226, 250, 98);
+    color: white;
 }
 /* REGLA DE LAS SECCIONES */
 .secciones{
     all: unset;
     display: flex;
     flex-direction: column;
-    padding: 5em 0;
+    padding: 10em 0;
     width: 100%;
 }
 h2{
@@ -61,10 +70,10 @@ p{
 }
 .containerTitle{
     align-self: center;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 }
 .sectionTitle{
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 200;
 }
 .font{
@@ -82,22 +91,22 @@ p{
 }
 
 /* ABOUT ME */
-#containerText{
+#containerAboutMe{
     display: flex;
     flex-direction: column;
-    width: 40em;
-    align-items: center;
     justify-content: center;
-    background-color: blue;
+    align-items: center;
 }
-.aboutText{
-    font-size: 15em;
+#containerText{
+    width: 80%;
+}
+#aboutText{
+    font-size: 13vw;
     font-weight: 200;
 }
 
 /* STUFF*/
 #containerKnowledge{
-    all: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,13 +116,25 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-grow: 1;
     width: 80%;
 }
-.aboutBoxes{
-    width: 20em;
-    height: 20em;
-    margin-bottom: 3em;
+.boxes{
+    width: 30em;
+    height: 30em;
+    margin-bottom: 5em;
 }
 
+@media (max-width: 40em){
+    #cajon{
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top:1em;
+        justify-content: space-around;
+    }
+    .links{
+        font-size: 1.5em;
+    }
+}

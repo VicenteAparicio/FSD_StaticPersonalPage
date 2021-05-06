@@ -1,0 +1,86 @@
+body{
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 53, 59, 23);
+}
+nav{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10em 0 15em 0;
+    height: 20em;
+    width: 50%;
+}
+#containerHome{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#home{
+    font-size: 18em;
+}
+#cajon{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.links{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 168, 186, 73);
+}
+.links:hover{
+    color: rgba(0, 226, 250, 98);
+}
+
+main{
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40em;
+    background-color: blanchedalmond;
+}
+#containerTitle{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+}
+
+#aboutMe{
+    all: unset;
+    font-size: 4em;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 53, 59, 23);
+}
+
+#containerBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 20em;
+    width: 80%;
+}
+.boxes{
+    background-color: red;
+    width: 20em;
+
+}
