@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">-->
+    
     <title>Vicente Aparicio - Portfolio</title>
 </head>
 <body>
+    <header>
+        <a href="https://github.com/VicenteAparicio" target="_blank"><i id="github" class="fab fa-github cLight"></i></a>
+    </header>
     <nav>
         <div id="containerHome">
-            <a id="home" class="links font" href="./index.html" target="_blank">vicente</a>
-            <a id="home2" class="links font" href="./index.html" target="_blank">aparicio</a>
+            <a id="home" class="links font" href="./index.html" target="_self">vicente</a>
+            <a id="home2" class="links font" href="./index.html" target="_self">aparicio</a>
         </div>
         <div id="cajon">
-            <a id="contact" class="links font" href="./contact.html" target="_blank">contacto</a>
-            <a id="portfolio" class="links font" href="./portfolio.html" target="_blank">portfolio</a>
+            <a id="contact" class="links font" href="./contact.html" target="_self">contacto</a>
+            <a id="portfolio" class="links font" href="./portfolio.html" target="_self">portfolio</a>
         </div>
         <div class="flechas">
-            <i id="arrowDown"class="fa fa-arrow-down icos" aria-hidden="true"></i>
+            <i id="arrowDown"class="fa fa-arrow-down icos cLight" aria-hidden="true"></i>
         </div>
-        
     </nav>
 
-    <section id="containerAboutMe" class="secciones darker">
+    <section id="containerAboutMe" class="secciones bgLight cDark">
         <div class="containerTitle">
-            <h2 id="aboutMe" class="sectionTitle darker font">/about me</h2>
+            <h2 id="aboutMe" class="sectionTitle  font">/about me</h2>
         </div>
-        <div id="containerText" class="darker font">
+        <div id="containerText" class=" font">
                 Siempre<br> me he preguntado qué quería ser de mayor y creo que aún me lo pregunto con cada paso que doy.
         </div>
         <div class="flechas">
@@ -38,12 +41,12 @@
     </section>
 
 
-    <section id="containerKnowledge" class="secciones lighter">
+    <section id="containerKnowledge" class="secciones cLight">
         <i id="arrowKnowledge" class="fa fa-arrow-down icos" aria-hidden="true"></i>
         <div class="containerTitle">
-            <h2 id="stuff" class="sectionTitle lighter font">/knowledge</h2>
+            <h2 class="sectionTitle font">/knowledge</h2>
         </div>
-        <div id="containerBoxes">
+        <div class="containerBoxes">
             <div class="boxes" id="left">
                 <div class="tituloBoxes font">Graphic Designer</div>
                 <div class="contenidoBoxes font">
@@ -68,7 +71,18 @@
             </div>
         </div>
     </section>
-    
+    <section id="teconolgia" class="secciones bgLight">
+        <div class="containerTitle">
+            <h2 class="sectionTitle cDark font">/tech</h2>
+        </div>
+        <div class="containerBoxes">
+            <div class="boxes">
+                <div class="tituloBoxes"></div>
+                <div class="contenidoBoxes"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/ac47b89bc3.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

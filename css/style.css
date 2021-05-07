@@ -5,9 +5,14 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 53, 59, 23);
+    background: linear-gradient(0deg, rgba(0,53,59,1) 0%, rgba(0,111,124,1) 100%);
 }
-
+/* HEADER CON LAS REDES */
+header{
+    box-sizing: border-box;
+    padding: .5em 1em;
+    width: 100%;
+}
 /* HOME */
 nav{
     all: unset;
@@ -55,6 +60,10 @@ nav{
     color: white;
 }
 /* ICONOS Y FLECHAS */
+#github{
+    color: blanchedalmond;
+    font-size: 2em;
+}
 .flechas{
     margin-top: 5em;
     display: flex;
@@ -63,15 +72,12 @@ nav{
     width: 80%;
 }
 #arrowDown{
-    color:blanchedalmond;
     animation-name: arrowDownAnimation;
 }
 #levelDown{
-    color:rgba(0, 53, 59, 23);
     animation-name: arrowDownAnimation;
 }
 #arrowKnowledge{
-    color:blanchedalmond;
     animation-name: arrowRotateAnimation;
 }
 .icos{
@@ -116,14 +122,17 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 /* COLORES */
-.lighter{
+.cLight{
     color: blanchedalmond;
-    background-color: rgba(0, 53, 59, 23);
-
 }
-.darker{
-    color: rgba(0, 53, 59, 23);
+.bgLight{
     background-color: blanchedalmond;
+}
+.cDark{
+    color: rgba(0, 53, 59, 23);
+}
+.bgDark{
+    background-color: rgba(0, 53, 59, 23);
 }
 
 /* ABOUT ME */
@@ -145,7 +154,7 @@ p{
     align-items: center;
     width: 100%;
 }
-#containerBoxes{
+.containerBoxes{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
