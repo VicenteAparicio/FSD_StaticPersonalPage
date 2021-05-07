@@ -193,15 +193,19 @@ p{
     font-weight: 200;  
 }
 
+#tecnologia{
+    padding-top: 8em;
+}
 .inBoxes{
-    padding: 3em 2em;
+    width: 5em;
+    min-height: 0em;
+    padding: 1em 1em;
     border-radius: 1em;
     font-weight: 300;
 }
 .tituloBoxes{
     font-size: 1em;
     font-weight: 400;
-    margin-bottom: 2em;
 }
 .center{
     margin: 0 3em 5em;
