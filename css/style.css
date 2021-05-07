@@ -7,12 +7,6 @@ body{
     width: 100%;
     background: linear-gradient(0deg, rgba(0,53,59,1) 0%, rgba(0,111,124,1) 100%);
 }
-/* HEADER CON LAS REDES */
-header{
-    box-sizing: border-box;
-    padding: .5em 1em;
-    width: 100%;
-}
 /* HOME */
 nav{
     all: unset;
@@ -24,6 +18,7 @@ nav{
     width: 50%;
 }
 #containerHome{
+    margin-top: -5em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -43,13 +38,13 @@ nav{
     line-height: .5em;
     margin-left: 100%;
 }
-#cajon{
+/* #cajon{
     margin-top: 2.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 90%;
-}
+} */
 .links{
     text-decoration: none;
     font-size: 2.5em;
@@ -60,15 +55,44 @@ nav{
     color: white;
 }
 /* ICONOS Y FLECHAS */
-#github{
-    color: blanchedalmond;
+#navegador{
+    display: none;
+}
+#navegador2{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: .8em 1em;
+    margin-top: 5em;
+    width: 80%;
+}
+.icoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4em;
+    width: 10em;
+}
+.hide{
+    display: none;
+}
+.icoBox:hover .hide{
+    display: block;
+}
+.icosNav{
     font-size: 2em;
+}
+.icosNav:hover{
+    filter: brightness(120);
+    transform: rotate(1turn);
+    transition: 1s;
 }
 .flechas{
     margin-top: 5em;
     display: flex;
     justify-content: center;
-    height: 10em;
+    height: 5em;
     width: 80%;
 }
 #arrowDown{
@@ -92,7 +116,7 @@ nav{
 }
 @keyframes arrowDownAnimation {
     from {margin-top: 0em;}
-    to{margin-top: 10em;}
+    to{margin-top: 5em;}
 }
 
 @keyframes arrowRotateAnimation {
@@ -145,20 +169,23 @@ p{
     font-size: 13vw;
     font-weight: 200;
 }
-
+.texto {
+    background: linear-gradient(0deg, rgba(0,53,59,1) 0%, rgba(0,111,124,1) 100%);
+    -webkit-background-clip: text;
+      color: transparent;
+ }
 /* KNOWLEDGE Y TECNOLOGIAS */
 .containerBoxes{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 80%;
 }
 .boxes{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
     width: 20em;
     min-height: 10em;
     margin-bottom: 5em;
@@ -177,7 +204,6 @@ p{
     margin-bottom: 2em;
 }
 .center{
-    width: 20em;
     margin: 0 3em 5em;
 }
 
@@ -194,23 +220,21 @@ p{
 }
 @media (max-width: 40em){
     nav{
-        margin-top: 6em;
+        margin-top: 3em;
         height: 100vh;
     }
     #cajon{
-        margin: 0;
+        display: none;
+        /* margin: 0;
         width: 100%;
         position: absolute;
         top:1em;
-        justify-content: space-around;
+        justify-content: space-around; */
     }
     .links{
         font-size: 1.5em;
     }
-    #arrowDown{
-        color:blanchedalmond;
-        font-size: 1em;
-    }
+
     .containerTitle{
         align-self: center;
         margin-bottom: 4em;
@@ -220,10 +244,29 @@ p{
         font-size: 2em;
     }
     #center{
-        width: 20em;
-        margin: 0 0 5em;
+        margin:0 0 0 0;
     }
     .secciones{
         padding: 3em 0;
+    }
+    /* HEADER */
+    #navegador2{
+        display: none;
+    }
+    #navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: .8em 1em;
+        width: 100%;
+    }
+    .icosNav{
+        font-size: 2em;
+    }
+    .icosNav:hover{
+        filter: brightness(120);
+        transform: rotate(1turn);
+        transition: 1s;
     }
 }
