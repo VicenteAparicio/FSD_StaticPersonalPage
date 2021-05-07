@@ -4,20 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;1,500;1,700&display=swap" rel="stylesheet">    
     <title>Vicente Aparicio - Portfolio</title>
 </head>
 <body>
-    <nav>
-        <a id="home" class="links" href="./index.html" target="_blank"></a>
-        <div id="cajon">
-            <a id="contact" class="links" href="./contact.html" target="_blank"></a>
-            <a id="portfolio" class="links" href="./portfolio.html" target="_blank"></a>
+    <div id="navegadorC">
+        <div class="icoBox">
+            <a href="https://github.com/VicenteAparicio" target="_blank"><i id="github" class="fab fa-github cLight icosNav"></i></a>
+            <span class="hide font cLight">github</span>
         </div>
-    </nav>
-    <main></main>
+        <div class="icoBox">
+            <a href="./contact.html" target="_blank"><i id="contacto" class="fas fa-envelope cLight icosNav"></i></i></a>
+            <span class="hide font cLight">contact</span>
+        </div>
+        <div class="icoBox">
+            <a href="./index.html" target="_blank"><i id="index" class="fas fa-home cLight icosNav"></i></a>
+        </div>
+        <div class="icoBox">
+            <a href="./portfolio.html" target="_blank"><i id="portfolio" class="fas fa-briefcase cLight icosNav"></i></a>
+            <span class="hide font cLight">portfolio</span>
+        </div>
+    </div>
+    <main>
+        <div id="mainContainer" class="bgLight font cDark">
+            <div id="formaForm" class="formTexto">
+				<h3 class="txt titol">TELÉFONO (Desde el móvil)</h3>
+				<a href="tel:+34 646 652 942">Pulsa aquí</a>
+				<p class="txt titol_llamada">EMAIL</p>
+				<form id="form" method="post" id="i-recaptcha">
+					<label for="asunto">Asunto:</label>
+					<input type="text" name="asunto" placeholder="Asunto del mensaje" required=""/>
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" placeholder="Nombre y Apellido" required=""/>
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
+					<label for="mensaje">Mensaje:</label>
+					<textarea name="mensaje" placeholder="Mensaje" required></textarea>
+					<input id="submit" type="submit" name="submit" value="Enviar"/>			
+				</form>	
+			</div>
+
+        </div>
+    </main>
     
+    <script src="https://kit.fontawesome.com/ac47b89bc3.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

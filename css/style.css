@@ -274,3 +274,32 @@ p{
         transition: 1s;
     }
 }
+
+/*         CONTACT           */ 
+#navegadorC{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: .8em 1em;
+    width: 80%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#mainContainer{
+    
+    
+    border-radius: 1em;
+}
+#formaForm{
+    padding: 1em 1em 1.5em 1em;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
