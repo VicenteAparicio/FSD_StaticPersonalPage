@@ -348,7 +348,9 @@ main{
     height: 5em;
     margin-bottom: 1em;
     max-width: 100%;
+    color: blanchedalmond;
 }
+
 #submit{
     border-style: none;
     border-radius: .2em;
