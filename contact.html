@@ -14,36 +14,33 @@
             <a href="https://github.com/VicenteAparicio" target="_blank"><i id="github" class="fab fa-github cLight icosNav"></i></a>
             <span class="hide font cLight">github</span>
         </div>
-        <div class="icoBox">
-            <a href="./contact.html" target="_blank"><i id="contacto" class="fas fa-envelope cLight icosNav"></i></i></a>
+        <!-- <div class="icoBox">
+            <a href="./contact.html" target="_blank"><id id="contacto" class="fas fa-envelope cLight icosNav"></id></a>
             <span class="hide font cLight">contact</span>
+        </div> -->
+        <div class="icoBox">
+            <a href="./index.html" target="_self"><i id="index" class="fas fa-home cLight icosNav"></i></a>
+            <span class="hide font cLight">home</span>
         </div>
         <div class="icoBox">
-            <a href="./index.html" target="_blank"><i id="index" class="fas fa-home cLight icosNav"></i></a>
-        </div>
-        <div class="icoBox">
-            <a href="./portfolio.html" target="_blank"><i id="portfolio" class="fas fa-briefcase cLight icosNav"></i></a>
+            <a href="./portfolio.html" target="_self"><i id="portfolio" class="fas fa-briefcase cLight icosNav"></i></a>
             <span class="hide font cLight">portfolio</span>
         </div>
     </div>
     <main>
         <div id="mainContainer" class="font cLight">
+            <span class="titlePage">/contact me</span>
             <div id="formaForm" class="formTexto">
-				<p class="txt titol_llamada">EMAIL</p>
 				<form id="form" method="post" id="i-recaptcha">
-                    <div id="boxDatos">
-					    <label for="asunto">Asunto:</label>
-					    <input class="bgDark" type="text" name="asunto" placeholder="Asunto del mensaje" required=""/>
-					    <label for="nombre">Nombre:</label>
-					    <input class="bgDark" type="text" name="nombre" placeholder="Nombre y Apellido" required=""/>
-					    <label for="email">Email:</label>
-					    <input class="bgDark" type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
-                    </div>
-                    <div id="boxMensaje">
-					    <label for="mensaje">Mensaje:</label>
-					    <textarea class="bgDark" name="mensaje" placeholder="Mensaje" required></textarea>
-					    <input id="submit" type="submit" name="submit" value="Enviar"/>
-                    </div>		
+                    <label for="nombre">name</label>
+					<input class="data bgDark" type="text" name="nombre" placeholder="" required=""/>
+					<label for="email">email</label>
+					<input class="data bgDark" type="email" name="email" placeholder="" required=""/>
+					<label for="asunto">subject</label>
+					<input class="data bgDark" type="text" name="asunto" placeholder="" required=""/>
+					<label for="mensaje">message</label>
+					<textarea class="bgDark" name="mensaje" placeholder="" required></textarea>
+					<input class="bgLight" id="submit" type="submit" name="submit" value="Enviar"/>			
 				</form>	
 			</div>
 

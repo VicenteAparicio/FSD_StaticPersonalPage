@@ -26,16 +26,17 @@ nav{
     align-items: center;
     width: 60%;
 }
-
-#home{
-    margin-top: 1em;
+.nameTitle{
     font-size: 15vw;
     line-height: .5em;
+    font-weight: 100;
+}
+.nameTop{
+    margin-top: 1em;
     margin-left: -92%;
 }
-#home2{
-    font-size: 15vw;
-    line-height: .5em;
+.nameBottom{
+
     margin-left: 100%;
 }
 /* #cajon{
@@ -79,6 +80,9 @@ nav{
 }
 .icoBox:hover .hide{
     display: block;
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: .5em;
 }
 .icosNav{
     font-size: 2em;
@@ -277,58 +281,82 @@ p{
 
 /*         CONTACT           */ 
 #navegadorC{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     justify-content: center;
     padding: .8em 1em;
+    height: 10vh;
     width: 80%;
+}
+.titlePage{
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 1em;
 }
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: burlywood;
+    height: 90vh;
+    width: 100%;
 }
 #mainContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 1em;
-    border: 0.1em solid blanchedalmond;
-    width: 40em;
-    height: 30em;
-    background-color: brown;
+    width: 30%;
+    min-width: 20em;
+    
+    
 }
 #formaForm{
-    background-color: blue;
-}
-#boxDatos{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .3em solid blanchedalmond;
+    border-radius: 1em;
+    width: 100%;
 }
-#boxMensaje{
-    display: flex;
-    flex-direction: column;
-}
-
 #form{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
 }
 
 #form label{
     margin: .5em 0;
 }
-#form input{
+
+#form .data{
+    all: unset;
+    box-sizing: border-box;
     padding: 0.5em 0;
+    font-size: .8em;
+    border-bottom: .1em solid blanchedalmond;
+    margin-bottom: 2em;
 }
 #form textarea{
-    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: .1em solid blanchedalmond;
+    border-radius: .2em;
+    height: 5em;
+    margin-bottom: 1em;
+    max-width: 100%;
 }
 #submit{
-    justify-self: flex-end;
+    border-style: none;
+    border-radius: .2em;
+    align-self: flex-end;
+    width: 10em;
+    height: 4em;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: rgb(255, 212, 149);
 }
