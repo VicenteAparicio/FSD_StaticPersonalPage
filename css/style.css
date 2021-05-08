@@ -290,16 +290,45 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: burlywood;
 }
 #mainContainer{
-    
-    
-    border-radius: 1em;
-}
-#formaForm{
-    padding: 1em 1em 1.5em 1em;
-}
-#form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    border: 0.1em solid blanchedalmond;
+    width: 40em;
+    height: 30em;
+    background-color: brown;
+}
+#formaForm{
+    background-color: blue;
+}
+#boxDatos{
+    display: flex;
+    flex-direction: column;
+}
+#boxMensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+}
+
+#form label{
+    margin: .5em 0;
+}
+#form input{
+    padding: 0.5em 0;
+}
+#form textarea{
+    height: 100%;
+}
+#submit{
+    justify-self: flex-end;
 }

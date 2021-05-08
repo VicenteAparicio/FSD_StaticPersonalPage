@@ -27,21 +27,23 @@
         </div>
     </div>
     <main>
-        <div id="mainContainer" class="bgLight font cDark">
+        <div id="mainContainer" class="font cLight">
             <div id="formaForm" class="formTexto">
-				<h3 class="txt titol">TELÉFONO (Desde el móvil)</h3>
-				<a href="tel:+34 646 652 942">Pulsa aquí</a>
 				<p class="txt titol_llamada">EMAIL</p>
 				<form id="form" method="post" id="i-recaptcha">
-					<label for="asunto">Asunto:</label>
-					<input type="text" name="asunto" placeholder="Asunto del mensaje" required=""/>
-					<label for="nombre">Nombre:</label>
-					<input type="text" name="nombre" placeholder="Nombre y Apellido" required=""/>
-					<label for="email">Email:</label>
-					<input type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
-					<label for="mensaje">Mensaje:</label>
-					<textarea name="mensaje" placeholder="Mensaje" required></textarea>
-					<input id="submit" type="submit" name="submit" value="Enviar"/>			
+                    <div id="boxDatos">
+					    <label for="asunto">Asunto:</label>
+					    <input class="bgDark" type="text" name="asunto" placeholder="Asunto del mensaje" required=""/>
+					    <label for="nombre">Nombre:</label>
+					    <input class="bgDark" type="text" name="nombre" placeholder="Nombre y Apellido" required=""/>
+					    <label for="email">Email:</label>
+					    <input class="bgDark" type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
+                    </div>
+                    <div id="boxMensaje">
+					    <label for="mensaje">Mensaje:</label>
+					    <textarea class="bgDark" name="mensaje" placeholder="Mensaje" required></textarea>
+					    <input id="submit" type="submit" name="submit" value="Enviar"/>
+                    </div>		
 				</form>	
 			</div>
 
