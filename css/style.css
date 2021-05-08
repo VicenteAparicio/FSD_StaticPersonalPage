@@ -172,11 +172,9 @@ p{
 }
 
 /* ABOUT ME */
-#containerText{
-    
-}
 .texto {
     background: linear-gradient(0deg, rgba(0,53,59,1) 0%, rgba(0,111,124,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
       color: transparent;
     font-size: 13vw;
@@ -279,6 +277,11 @@ p{
         transform: rotate(1turn);
         transition: 1s;
     }
+        /*GALERIA*/
+        .mySlides {height: auto; width: auto; max-height: 100%; max-width: 100vw; margin: 0 auto;} 
+        .videos {width: 100%; max-width: 100%; height: 65vh; min-height: 300px; padding: 30px 0;}
+        .column {margin: 0; padding: 0;}
+        .seccion2 {margin: 50px 0;}
 }
 
 /*         CONTACT           */ 
@@ -362,3 +365,96 @@ main{
     cursor: pointer;
     background-color: rgb(255, 212, 149);
 }
+
+/* PORTFOLIO  */
+/*GALERIA*/
+#galleryContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.previa {
+    width: auto;
+    height: 10em;
+    filter:brightness(85%);
+}
+.previa:hover {
+    filter:brightness(110%);
+}
+#myModal{
+    display: none;
+    justify-content: center;
+}
+.mySlides {
+    display: none;
+    height: 50vh;
+}
+/*CAJA GALERIA*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    align-items: center;}
+.forma{
+    position: fixed;
+    z-index: 3;
+    top: 0;}
+/*BOTONES*/
+.close {
+    z-index: 3;
+    color: blanchedalmond;
+    position: fixed;
+    font-size: 2em;
+    right: .3em;
+    top: .3em;
+    font-weight: bold;
+    padding: 0 20px;
+    background-color: rgba(100, 100, 100, .3);
+    border-radius: .3em;}
+  .close:hover, .close:focus {
+      color: #999;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  .cursor {
+      cursor: pointer;
+      z-index: 2;
+    }
+  .prev, .next {
+  z-index: 3;
+      cursor: pointer;
+      position: fixed;
+      width: 3%;
+      max-width: 8em; min-width: 3.5em;
+      top: 50%;
+      padding: 30px 0;
+      background-color:rgba(100, 100, 100, .3);
+      color: blanchedalmond;
+      font-weight: bold;
+     font-size: 20px;
+     transition: 0.6s ease;
+     border-radius:.2em;
+      user-select: none;
+       -webkit-user-select: none;
+        margin: 0;
+    }
+  .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #999;}
+  .next {
+      right: .3em;
+    } 
+    .prev {
+        left: .3em;}

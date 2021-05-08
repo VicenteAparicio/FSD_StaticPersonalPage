@@ -21,13 +21,45 @@
             <a href="./contact.html" target="_self"><i id="contacto" class="fas fa-envelope cLight icosNav"></i></a>
             <span class="hide font cLight">contact</span>
         </div>
-
         <!-- <div class="icoBox">
             <a href="./portfolio.html" target="_blank"><i id="portfolio" class="fas fa-briefcase cLight icosNav"></i></a>
             <span class="hide font cLight">portfolio</span>
         </div> -->
     </div>
-    <main></main>
+    <main>
+        <div id="galleryContainer">
+        <div class="column" id="hiddenPic">
+            <img src="./img/gallery/design_01.jpg" alt="NeckSound" onclick="openModal();currentSlide(this)" class="cursor previa" title="Trabajo de bocetaje sobre el logotipo de NeckSound.">
+            <img src="./img/gallery/design_02.jpg" alt="Logo Team 5 Cryers" onclick="openModal();currentSlide(this)" class="cursor previa" title="Logotipo para equipo de e-sports">
+            <img src="./img/gallery/design_03.jpg" alt="Cartel Sexamigos" onclick="openModal();currentSlide(this)" class="cursor previa" title="Cartel para la obra de microteatro Sexamigos.">
+            <img src="./img/gallery/design_04.jpg" alt="Flyer de KampusTicket" onclick="openModal();currentSlide(this)" class="cursor previa" title="Flyer para la página web de ofertas KampusTicket.">
+            <img src="./img/gallery/design_05.jpg" alt="Cartel Bafici Festival Indie" onclick="openModal();currentSlide(this)" class="cursor previa" title="Cartel de concurso para el festival de cine independiente Bafici.">
+            <img src="./img/gallery/design_06.jpg" alt="Banner OMR" onclick="openModal();currentSlide(this)" class="cursor previa" title="Banner publicitario para Onda Musical Radio.">
+            <img src="./img/gallery/design_07.jpg" alt="Cartel Una Hora y Media" onclick="openModal();currentSlide(this)" class="cursor previa" title="Cartel para el largometraje: Una hora y media">
+            <img src="./img/gallery/design_08.jpg" alt="Cartel The Walking On Sunshine" onclick="openModal();currentSlide(this)" class="cursor previa" title="Cartel para la obra de microteatro The Walking on Sunshine">
+            <img src="./img/gallery/design_09.jpg" alt="Díptico BAR MI BAYUCA" onclick="openModal();currentSlide(this)" class="cursor previa" title="Diseño del díptico para el menú del bar MI BAYUCA">
+            <img src="./img/gallery/design_10.jpg" alt="Logo CuisineLatina" onclick="openModal();currentSlide(this)" class="cursor previa" title="Logotipo para el restaurante Cuisine Latina">
+        </div>
+        <div id="myModal" class="modal"> 
+            <img class="mySlides" src="./img/galleryBruto/1.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/2.png" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/3.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/4.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/5.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/6.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/7.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/8.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/9.jpg" alt="" title="">
+            <img class="mySlides" src="./img/galleryBruto/10.png" alt="" title="">
+        
+            <div class="forma">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+            </div>
+        </div>
+    </div>
+    </main>
     
     <script src="https://kit.fontawesome.com/ac47b89bc3.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
