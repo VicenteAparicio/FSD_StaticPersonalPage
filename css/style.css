@@ -39,13 +39,6 @@ nav{
 
     margin-left: 100%;
 }
-/* #cajon{
-    margin-top: 2.5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 90%;
-} */
 .links{
     text-decoration: none;
     font-size: 2.5em;
@@ -67,6 +60,14 @@ nav{
     padding: .8em 1em;
     margin-top: 5em;
     width: 80%;
+}
+.icoOpen{
+    margin-top: 1em;
+    font-size: 2em;
+}
+.icoOpen:hover{
+    color: rgb(255, 207, 136);
+    cursor: pointer;
 }
 .icoBox{
     display: flex;
@@ -133,7 +134,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10em 0;
+    padding: 5em 0;
     width: 100%;
 }
 h2{
@@ -143,8 +144,11 @@ p{
     all: unset;
 }
 .containerTitle{
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10em;
+    height: 6em;
 }
 .sectionTitle{
     font-size: 3.5em;
@@ -169,14 +173,17 @@ p{
 
 /* ABOUT ME */
 #containerText{
-    width: 80%;
-    font-size: 13vw;
-    font-weight: 200;
+    
 }
 .texto {
     background: linear-gradient(0deg, rgba(0,53,59,1) 0%, rgba(0,111,124,1) 100%);
     -webkit-background-clip: text;
       color: transparent;
+    font-size: 13vw;
+    line-height: .2em;
+    font-weight: 200;
+    width: 80%;
+    height: 100%;
  }
 /* KNOWLEDGE Y TECNOLOGIAS */
 .containerBoxes{
@@ -210,6 +217,8 @@ p{
 .tituloBoxes{
     font-size: 1em;
     font-weight: 400;
+    margin-bottom: 1em;
+    width: 100%;
 }
 .center{
     margin: 0 3em 5em;
@@ -231,14 +240,7 @@ p{
         margin-top: 3em;
         height: 100vh;
     }
-    #cajon{
-        display: none;
-        /* margin: 0;
-        width: 100%;
-        position: absolute;
-        top:1em;
-        justify-content: space-around; */
-    }
+
     .links{
         font-size: 1.5em;
     }
@@ -309,8 +311,6 @@ main{
     align-items: center;
     width: 30%;
     min-width: 20em;
-    
-    
 }
 #formaForm{
     display: flex;
