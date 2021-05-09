@@ -18,13 +18,13 @@ nav{
     width: 50%;
 }
 #containerHome{
-    margin-top: -5em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60%;
+    height: 100%;
 }
 .nameTitle{
     font-size: 15vw;
@@ -32,11 +32,9 @@ nav{
     font-weight: 100;
 }
 .nameTop{
-    margin-top: 1em;
     margin-left: -92%;
 }
 .nameBottom{
-
     margin-left: 100%;
 }
 .links{
@@ -76,6 +74,9 @@ nav{
     height: 4em;
     width: 10em;
 }
+.icosBig{
+ font-size: 5em;
+}
 .hide{
     display: none;
 }
@@ -93,41 +94,11 @@ nav{
     transform: rotate(1turn);
     transition: 1s;
 }
-.flechas{
-    margin-top: 5em;
-    display: flex;
-    justify-content: center;
-    height: 5em;
-    width: 80%;
-}
-#arrowDown{
-    animation-name: arrowDownAnimation;
-}
-#levelDown{
-    animation-name: arrowDownAnimation;
-}
-#arrowKnowledge{
-    animation-name: arrowRotateAnimation;
-}
-.icos{
-    font-size: 1.5em;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
-}
-.icosBig{
-    font-size: 5em;
-}
-@keyframes arrowDownAnimation {
-    from {margin-top: 0em;}
-    to{margin-top: 5em;}
+.fa-book-open{
+    animation-name: ;
+    margin-bottom: 4em;
 }
 
-@keyframes arrowRotateAnimation {
-    from {transform: rotate(0deg);}
-    to{transform: rotate(90deg);}
-}
 /* REGLA DE LAS SECCIONES */
 .secciones{
     all: unset;
@@ -143,12 +114,16 @@ h2{
 p{
     all: unset;
 }
+
+#openBoxAbout{
+    height: 6em;
+    margin-bottom: 10em;
+}
 .containerTitle{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10em;
-    height: 6em;
+    margin-bottom: 2em;
 }
 .sectionTitle{
     font-size: 3.5em;
@@ -172,6 +147,13 @@ p{
 }
 
 /* ABOUT ME */
+#containerText{
+    margin-top: .5em;
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#aboutMe:hover{
+    cursor: pointer;
+}
 .texto {
     background: linear-gradient(0deg, rgba(0,53,59,1) 0%, rgba(0,111,124,1) 100%);
     background-clip: text;
@@ -197,7 +179,6 @@ p{
     align-items: center;
     width: 20em;
     min-height: 10em;
-    margin-bottom: 5em;
     font-size: 1em;
     font-weight: 200;  
 }
@@ -206,17 +187,18 @@ p{
     padding-top: 8em;
 }
 .inBoxes{
+    justify-content: center;
     width: 5em;
-    min-height: 0em;
-    padding: 1em 1em;
+    padding: 0 2em;
     border-radius: 1em;
     font-weight: 300;
+    margin-bottom: 1em;
+
 }
 .tituloBoxes{
     font-size: 1em;
     font-weight: 400;
-    margin-bottom: 1em;
-    width: 100%;
+    margin: 2em 0 1em 0;
 }
 .center{
     margin: 0 3em 5em;
@@ -236,7 +218,7 @@ p{
 @media (max-width: 40em){
     nav{
         margin-top: 3em;
-        height: 100vh;
+        height: 90vh;
     }
 
     .links{
@@ -245,7 +227,7 @@ p{
 
     .containerTitle{
         align-self: center;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
     }
     .sectionTitle{
         margin: 0;
@@ -390,10 +372,11 @@ main{
 #myModal{
     display: none;
     justify-content: center;
+    overflow: hidden;
 }
 .mySlides {
     display: none;
-    height: 50vh;
+    width: 80vh;
 }
 /*CAJA GALERIA*/
 .modal {
@@ -402,9 +385,7 @@ main{
     z-index: 3;
     top:0;
     left:0;
-    width: 100%;
     height: 100vh;
-    overflow: hidden;
     background-color: black;
     align-items: center;}
 .forma{
@@ -423,38 +404,36 @@ main{
     padding: 0 20px;
     background-color: rgba(100, 100, 100, .3);
     border-radius: .3em;}
-  .close:hover, .close:focus {
-      color: #999;
-      text-decoration: none;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-  .cursor {
-      cursor: pointer;
-      z-index: 2;
-    }
-  .prev, .next {
-  z-index: 3;
-      cursor: pointer;
-      position: fixed;
-      width: 3%;
-      max-width: 8em; min-width: 3.5em;
-      top: 50%;
-      padding: 30px 0;
-      background-color:rgba(100, 100, 100, .3);
-      color: blanchedalmond;
-      font-weight: bold;
-     font-size: 20px;
-     transition: 0.6s ease;
-     border-radius:.2em;
-      user-select: none;
-       -webkit-user-select: none;
-        margin: 0;
-    }
-  .prev:hover, .next:hover {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #999;}
-  .next {
-      right: .3em;
-    } 
-    .prev {
-        left: .3em;}
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    background-color: rgba(167, 167, 167, 0.5);
+}
+.cursor {
+    cursor: pointer;
+    z-index: 2;
+}
+.prev, .next {
+    z-index: 3;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    padding: 2em 1em;
+    background-color:rgba(100, 100, 100, .3);
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius:.2em;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(167, 167, 167, 0.5);
+    color: #999;}
+      
+.next {
+    right: .3em;
+   } 
+.prev {
+    left: .3em;}
