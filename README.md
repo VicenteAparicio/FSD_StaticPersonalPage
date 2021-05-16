@@ -1,5 +1,9 @@
 ## First Static Personal Page
 
+- Start date: 3 May 2021
+- Delivery date: 9 May 2021
+- Dedicated time: <25 hours 
+
 En este proyecto he realizado una versión primitiva y estática de lo que podría ser mi futura web personal como desarrollador.
 
 https://vicenteaparicio.github.io/staticPersonalPage/
