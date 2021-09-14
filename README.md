@@ -6,7 +6,7 @@
 
 En este proyecto he realizado una versión primitiva y estática de lo que podría ser mi futura web personal como desarrollador.
 
-https://vicenteaparicio.github.io/staticPersonalPage/
+https://vicenteaparicio.github.io/FSD_StaticPersonalPage/
 
 
 ***
